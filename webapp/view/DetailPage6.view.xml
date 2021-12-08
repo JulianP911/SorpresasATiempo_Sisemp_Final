@@ -1,0 +1,246 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" controllerName="com.sap.build.standard.prototipoDeAltaFidelidad.controller.DetailPage6" xmlns="sap.m" xmlns:layout="sap.ui.layout">
+    <Page showHeader="true" title="Inventario unificado - Sorpresas a Tiempo" showFooter="true" showNavButton="true" navButtonPress="_onPageNavButtonPress">
+        <content>
+            <Table width="auto" noDataText="No data" mode="Delete" showSeparators="All" growing="true" growingThreshold="20" growingScrollToLoad="true" class="sapUiTinyMargin">
+                <infoToolbar/>
+                <headerToolbar>
+                    <OverflowToolbar width="auto" height="44px" design="Auto" visible="true" enabled="true">
+                        <content>
+                            <Title text="Inventario unificado" titleStyle="Auto" width="auto" textAlign="Begin" visible="true" wrapping="false"/>
+                            <ToolbarSpacer width=""/>
+                            <OverflowToolbarButton text="Sort" type="Transparent" icon="sap-icon://sort" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false"/>
+                            <OverflowToolbarButton text="Filter" type="Transparent" icon="sap-icon://filter" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false"/>
+                            <OverflowToolbarButton text="Group" type="Transparent" icon="sap-icon://group-2" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false"/>
+                            <OverflowToolbarButton text="Settings" type="Transparent" icon="sap-icon://action-settings" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false"/>
+                        </content>
+                    </OverflowToolbar>
+                </headerToolbar>
+                <columns>
+                    <Column width="auto" hAlign="Left" vAlign="Top" minScreenWidth="Phone" demandPopin="false" popinDisplay="Inline" mergeDuplicates="false">
+                        <header>
+                            <Text text="Nombre" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+                        </header>
+                        <footer/>
+                    </Column>
+                    <Column width="auto" hAlign="Left" vAlign="Top" minScreenWidth="Tablet" demandPopin="true" popinDisplay="Inline" mergeDuplicates="false">
+                        <header>
+                            <Text text="Categoria" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+                        </header>
+                        <footer/>
+                    </Column>
+                    <Column width="auto" hAlign="Left" vAlign="Top" minScreenWidth="Tablet" demandPopin="true" popinDisplay="Inline" mergeDuplicates="false">
+                        <header>
+                            <Text text="Precio por unidad" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+                        </header>
+                        <footer/>
+                    </Column>
+                    <Column width="auto" hAlign="Left" vAlign="Top" minScreenWidth="Tablet" demandPopin="true" popinDisplay="Inline" mergeDuplicates="false">
+                        <header>
+                            <Text text="Cantidad en existencias" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+                        </header>
+                        <footer/>
+                    </Column>
+                    <Column width="auto" hAlign="Left" vAlign="Top" minScreenWidth="Tablet" demandPopin="true" popinDisplay="Inline" mergeDuplicates="false">
+                        <header>
+                            <Text text="Locación" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+                        </header>
+                        <footer/>
+                    </Column>
+                    <Column width="auto" hAlign="Left" vAlign="Top" minScreenWidth="Tablet" demandPopin="true" popinDisplay="Inline" mergeDuplicates="false">
+                        <header>
+                            <Text text="Valor en inventario" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+                        </header>
+                        <footer/>
+                    </Column>
+                </columns>
+                <items>
+                    <ColumnListItem type="Active">
+                        <cells>
+                            <ObjectIdentifier title="Peluche Oso Mediano" text="OS-1420" titleActive="false" visible="true"/>
+                            <Text text="Peluches" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+                            <ObjectNumber number="5.000" unit="COP" emphasized="true" state="None"/>
+                            <Text text="5 unidades" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+                            <ObjectStatus title="" text="Bodega Principal" state="None" visible="true" class="sapUiTinyMargin"/>
+                            <ObjectNumber number="25.000" unit="COP" emphasized="true" state="None"/>
+                            <layout:HorizontalLayout>
+                                <layout:content/>
+                            </layout:HorizontalLayout>
+                        </cells>
+                    </ColumnListItem>
+                    <ColumnListItem type="Active">
+                        <cells>
+                            <ObjectIdentifier title="Chocolates Jet" text="CH-9840" titleActive="false" visible="true"/>
+                            <Text text="Chocolates" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+                            <ObjectNumber number="7.500" unit="COP" emphasized="true" state="None"/>
+                            <Text text="12 unidades" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+                            <ObjectStatus title="" text="Bodega Principal" state="None" visible="true" class="sapUiTinyMargin"/>
+                            <ObjectNumber number="90.000" unit="COP" emphasized="true" state="None"/>
+                        </cells>
+                    </ColumnListItem>
+                    <ColumnListItem type="Active">
+                        <cells>
+                            <ObjectIdentifier title="Globlo Mediano Feliz Día" text="GL-2912" titleActive="false" visible="true"/>
+                            <Text text="Decoración" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+                            <ObjectNumber number="2.900" unit="COP" emphasized="true" state="None"/>
+                            <Text text="2 unidades" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+                            <ObjectStatus title="" text="Bodega Terciaria" state="None" visible="true" class="sapUiTinyMargin"/>
+                            <ObjectNumber number="5.800" unit="COP" emphasized="true" state="None"/>
+                        </cells>
+                    </ColumnListItem>
+                    <ColumnListItem type="Active">
+                        <cells>
+                            <ObjectIdentifier title="Canasta Mediana" text="CM-2482" titleActive="false" visible="true"/>
+                            <Text text="Decoración" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+                            <ObjectNumber number="12.450" unit="COP" emphasized="true" state="None"/>
+                            <Text text="7 unidades" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+                            <ObjectStatus title="" text="Bodega Secundaria" state="None" visible="true" class="sapUiTinyMargin"/>
+                            <ObjectNumber number="87.150" unit="COP" emphasized="true" state="None"/>
+                        </cells>
+                    </ColumnListItem>
+                    <ColumnListItem type="Active">
+                        <cells>
+                            <ObjectIdentifier title="Botella Pequeña de Vino" text="VN-9833" titleActive="false" visible="true"/>
+                            <Text text="Bebidas" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+                            <ObjectNumber number="9.500" unit="COP" emphasized="true" state="None"/>
+                            <Text text="5 unidad" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+                            <ObjectStatus title="" text="Bodega Principal" state="None" visible="true" class="sapUiTinyMargin"/>
+                            <ObjectNumber number="47.500" unit="COP" emphasized="true" state="None"/>
+                        </cells>
+                    </ColumnListItem>
+                    <ColumnListItem type="Active">
+                        <cells>
+                            <ObjectIdentifier title="Galletas Variadas X6" text="GV-1213" titleActive="false" visible="true"/>
+                            <Text text="Snacks" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+                            <ObjectNumber number="13.900" unit="COP" emphasized="true" state="None"/>
+                            <Text text="1 unidad" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+                            <ObjectStatus title="" text="Bodega Terciaria" state="None" visible="true" class="sapUiTinyMargin"/>
+                            <ObjectNumber number="13.900" unit="COP" emphasized="true" state="None"/>
+                        </cells>
+                    </ColumnListItem>
+                    <ColumnListItem type="Active">
+                        <cells>
+                            <ObjectIdentifier title="Canasta Grande" text="CM-9238" titleActive="false" visible="true"/>
+                            <Text text="Decoración" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+                            <ObjectNumber number="15.450" unit="COP" emphasized="true" state="None"/>
+                            <Text text="10 unidades" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+                            <ObjectStatus title="" text="Bodega Secundaria" state="None" visible="true" class="sapUiTinyMargin"/>
+                            <ObjectNumber number="154.500" unit="COP" emphasized="true" state="None"/>
+                        </cells>
+                    </ColumnListItem>
+                    <ColumnListItem type="Active">
+                        <cells>
+                            <ObjectIdentifier title="Rosas x12" text="RV-9212" titleActive="false" visible="true"/>
+                            <Text text="Flores" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+                            <ObjectNumber number="5.900" unit="COP" emphasized="true" state="None"/>
+                            <Text text="5 unidades" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+                            <ObjectStatus title="" text="Bodega Terciaria" state="None" visible="true" class="sapUiTinyMargin"/>
+                            <ObjectNumber number="29.500" unit="COP" emphasized="true" state="None"/>
+                        </cells>
+                    </ColumnListItem>
+                    <ColumnListItem type="Active">
+                        <cells>
+                            <ObjectIdentifier title="Paquetes Variadaos X6" text="PQ-8382" titleActive="false" visible="true"/>
+                            <Text text="Snacks" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+                            <ObjectNumber number="15.200" unit="COP" emphasized="true" state="None"/>
+                            <Text text="10 unidades" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+                            <ObjectStatus title="" text="Bodega Secundario" state="None" visible="true" class="sapUiTinyMargin"/>
+                            <ObjectNumber number="150.200" unit="COP" emphasized="true" state="None"/>
+                        </cells>
+                    </ColumnListItem>
+                    <ColumnListItem type="Active">
+                        <cells>
+                            <ObjectIdentifier title="Botella Pequeña de Baileys" text="BS-2321" titleActive="false" visible="true"/>
+                            <Text text="Bebidas" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+                            <ObjectNumber number="20.500" unit="COP" emphasized="true" state="None"/>
+                            <Text text="3 unidad" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+                            <ObjectStatus title="" text="Bodega Principal" state="None" visible="true" class="sapUiTinyMargin"/>
+                            <ObjectNumber number="61.500" unit="COP" emphasized="true" state="None"/>
+                        </cells>
+                    </ColumnListItem>
+                    <ColumnListItem type="Active">
+                        <cells>
+                            <ObjectIdentifier title="Chocolates Ferrero" text="CH-0309" titleActive="false" visible="true"/>
+                            <Text text="Chocolates" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+                            <ObjectNumber number="11.500" unit="COP" emphasized="true" state="None"/>
+                            <Text text="2 unidades" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+                            <ObjectStatus title="" text="Bodega Principal" state="None" visible="true" class="sapUiTinyMargin"/>
+                            <ObjectNumber number="23.000" unit="COP" emphasized="true" state="None"/>
+                        </cells>
+                    </ColumnListItem>
+                    <ColumnListItem type="Active">
+                        <cells>
+                            <ObjectIdentifier title="Globlo Mediano Emoji" text="GL-2304" titleActive="false" visible="true"/>
+                            <Text text="Decoración" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+                            <ObjectNumber number="4.700" unit="COP" emphasized="true" state="None"/>
+                            <Text text="8 unidades" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+                            <ObjectStatus title="" text="Bodega Terciaria" state="None" visible="true" class="sapUiTinyMargin"/>
+                            <ObjectNumber number="37.600" unit="COP" emphasized="true" state="None"/>
+                        </cells>
+                    </ColumnListItem>
+                    <ColumnListItem type="Active">
+                        <cells>
+                            <ObjectIdentifier title="Barras Nutricereales" text="NT-0930" titleActive="false" visible="true"/>
+                            <Text text="Snacks" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+                            <ObjectNumber number="1.450" unit="COP" emphasized="true" state="None"/>
+                            <Text text="20 unidades" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+                            <ObjectStatus title="" text="Bodega Secundaria" state="None" visible="true" class="sapUiTinyMargin"/>
+                            <ObjectNumber number="29.000" unit="COP" emphasized="true" state="None"/>
+                        </cells>
+                    </ColumnListItem>
+                    <ColumnListItem type="Active">
+                        <cells>
+                            <ObjectIdentifier title="Manzanas Verdes" text="FT-2931" titleActive="false" visible="true"/>
+                            <Text text="Frutas" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+                            <ObjectNumber number="700" unit="COP" emphasized="true" state="None"/>
+                            <Text text="15 unidades" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+                            <ObjectStatus title="" text="Bodega Terciaria" state="None" visible="true" class="sapUiTinyMargin"/>
+                            <ObjectNumber number="10.500" unit="COP" emphasized="true" state="None"/>
+                        </cells>
+                    </ColumnListItem>
+                    <ColumnListItem type="Active">
+                        <cells>
+                            <ObjectIdentifier title="Cerveza Corona X4" text="CV-0923" titleActive="false" visible="true"/>
+                            <Text text="Bebidas" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+                            <ObjectNumber number="12.900" unit="COP" emphasized="true" state="None"/>
+                            <Text text="4 unidades" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+                            <ObjectStatus title="" text="Bodega Primaria" state="None" visible="true" class="sapUiTinyMargin"/>
+                            <ObjectNumber number="51.600" unit="COP" emphasized="true" state="None"/>
+                        </cells>
+                    </ColumnListItem>
+                    <ColumnListItem type="Active">
+                        <cells>
+                            <ObjectIdentifier title="Peluche Oso Pequeño" text="PL-9238" titleActive="false" visible="true"/>
+                            <Text text="Peluches" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+                            <ObjectNumber number="5.400" unit="COP" emphasized="true" state="None"/>
+                            <Text text="5 unidades" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+                            <ObjectStatus title="" text="Bodega Terciaria" state="None" visible="true" class="sapUiTinyMargin"/>
+                            <ObjectNumber number="27.000" unit="COP" emphasized="true" state="None"/>
+                        </cells>
+                    </ColumnListItem>
+                    <ColumnListItem type="Active">
+                        <cells>
+                            <ObjectIdentifier title="Chocolates Hershey" text="CH-2939" titleActive="false" visible="true"/>
+                            <Text text="Chocolates" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+                            <ObjectNumber number="2.700" unit="COP" emphasized="true" state="None"/>
+                            <Text text="7 unidades" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+                            <ObjectStatus title="" text="Bodega Secundaria" state="None" visible="true" class="sapUiTinyMargin"/>
+                            <ObjectNumber number="18.900" unit="COP" emphasized="true" state="None"/>
+                        </cells>
+                    </ColumnListItem>
+                </items>
+            </Table>
+            <Title text="" titleStyle="Auto" width="45%" textAlign="Begin" visible="true" wrapping="false"/>
+            <Button text="Actualizar Inventario" type="Emphasized" icon="sap-icon://upload-to-cloud" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false" class="sapUiTinyMargin" press="_onButtonPress"/>
+        </content>
+        <footer>
+            <OverflowToolbar width="100%" height="46px" design="Auto" enabled="true" visible="true">
+                <content>
+                    <ToolbarSpacer width=""/>
+                </content>
+            </OverflowToolbar>
+        </footer>
+        <headerContent/>
+        <subHeader/>
+        <customHeader/>
+    </Page>
+</mvc:View>
